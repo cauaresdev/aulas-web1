@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhos Absolutos e Relativos</title>
+    <style>
+        .container  {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .folder {
+            text-align: center;
+        }
+
+        .folder img {
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Caminhos Absolutos e Relativos</h1>
+
+    <p>Os caminhos em um sistema de arquivos podem ser especificados de duas maneiras: absolutos e relativos.</p>
+
+    <h2>Caminho Absoluto</h2>
+    <p>No caminho absoluto, o endereço é especificado desde a raiz do sistema de arquivos.</p>
+    <p>Exemplo: <code>/home/usuario/pasta/arquivo.html</code></p>
+
+    <h2>Caminho Relativo</h2>
+    <p>No caminho relativo, o endereço é especificado em relação à localização atual do arquivo.</p>
+    <p>Exemplo: <code>../pasta/arquivo.html</code></p>
+
+    <h2>Exemplo de Estrutura de Diretório</h2>
+    <div class="container">
+        <div class="folder">
+            <h3>Pasta Pai</h3>
+            <img src="https://imgs.search.brave.com/dAUUMVavwLsd3wtoma7fyahi9mdMw2bBnaERCRdJceY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZWVrc2Zvcmdl/ZWtzLm9yZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMTA1MDEx/MjQ0MTEvZGlyLnBu/Zw" alt="Pasta Pai">
+        </div>
+        <div class="folder">
+           
+        </div>
+    </div>
+
+    <h2>Exemplos de Código HTML</h2>
+    <p>Suponha que tenhamos os seguintes arquivos:</p>
+    <ul>
+        <li><code>pasta-pai/index.html</code></li>
+        <li><code>pasta-pai/pasta-filha/arquivo.html</code></li>
+    </ul>
+
+    <p>Para incluir <code>arquivo.html</code> em <code>index.html</code>, podemos usar:</p>
+    <p>Caminho Absoluto: <code>&lt;a href="/pasta-pai/pasta-filha/arquivo.html"&gt;Link&lt;/a&gt;</code></p>
+    <p>Caminho Relativo: <code>&lt;a href="pasta-filha/arquivo.html"&gt;Link&lt;/a&gt;</code></p>
+
+</body>
+</html>
