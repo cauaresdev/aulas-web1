@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.topdmais{
+     background: #ffa500;
+     font-size: 14px;
+     color: black;
+     
+}
+.textarea{
+        width: 300px;
+        height: 150px;
+        resize: none;
+        overflow-y: scroll; 
+}
+.topdmais2{
+    font-size: 13px;
+    font-weight: bold;
+
+}
+.labelteste{
+
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+
+   
+}
+.labelcentro{
+
+    display: inline;
+    width: 120px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <p class="topdmais">SISTEMA DE GESTÃO ACADÊMICA</span>
+    <p><span class="topdmais2">MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</span> 
+    </p>
+    
+
+    <form>
+       <br> <label class="labelteste">Login</label>
+            <input type="text" name="login"> <br>
+      <br>  <label class="labelteste">Senha</label>
+            <input type="password" name="senha"> <br>
+      <br>  <label class="labelteste">Status</label> 
+                <select>
+                    <option>
+                        Inativo
+                    </option>
+                        <option>
+                            Ativo
+                        </option>
+                </select>
+                    <br>
+         <br>   <label class="labelteste">Tipo</label> 
+                    <input type="radio" name="opcao"> Técnico
+                    <input type="radio" name="opcao"> Professor
+                    <input type="radio" name="opcao"> Aluno <br>
+          <br>  <label class="labelteste">Data Criação</label>
+                    <input type="date" name="data"> <br>
+         <br>   <label class="labelteste">Perfil</label>
+                    <input type="radio" name="opcao"> Convidado
+                    <input type="radio" name="opcao"> Administrador
+            <table>
+                <tr>
+                    <td rowspan="3"><br><label class="labelteste">Observações</label></td>
+                    <td rowspan="3"><textarea name="observ" rows="5" cols="40"></textarea></td>
+                </tr>
+            </table>
+             
+            <br>   <label class="labelteste">Módulos</label>
+                        <input type="checkbox" name="modulos"> Compras
+                        <input type="checkbox" name="modulos" value="biblio"> Biblioteca
+                        <input type="checkbox" name="modulos"> Acadêmico    
+                      <br>     
+                      <br>
+                      <label class="labelteste"></label><input type="checkbox" name="modulos"> Documentação
+                      <input type="checkbox" name="modulos"> Recursos Humanos
+<br><br>
+                      <button>
+                        Cadastrar
+                      </button>
+                         
+                         <button>
+                                Excluir
+                         </button>
+                
+                
+
+    
+        
+    
